@@ -12,6 +12,7 @@ tagline: I like it.
 ### I want to learn more. 
 I wanna post little experiments and things I figure out here. 
 
+<img src="assets/themes/twitter/bootstrap/img/fascinating.jpg" />
 
 <section class="right">
   <h3>Recent posts</h3>
