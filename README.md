@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
@@ -40,3 +41,9 @@ The master and gh-pages branch do not share the same ancestry. Please treat them
 ## License
 
 [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+=======
+tippytap.github.com
+===================
+
+jekyll bootstrap test 2: the revenge of jekyll.
+>>>>>>> 43188222a5c7ad2ce9ab8ba8440bda88b1ab7d7e
