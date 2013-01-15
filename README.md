@@ -45,5 +45,10 @@ The master and gh-pages branch do not share the same ancestry. Please treat them
 tippytap.github.com
 ===================
 
+<<<<<<< HEAD
 jekyll bootstrap test
 >>>>>>> ea52a967d8ac2592fb73bc93fe25cd5b3ae96d6e
+=======
+jekyll bootstrap test 2: the revenge of jekyll.
+>>>>>>> 43188222a5c7ad2ce9ab8ba8440bda88b1ab7d7e
+>>>>>>> f573a5568770f9c975cf4ee02f899a2e7d36d37f
