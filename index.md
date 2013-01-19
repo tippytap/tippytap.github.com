@@ -1,18 +1,13 @@
 ---
-layout: page
+layout: default
 title: Code
 tagline: I like it.
 ---
-{% include JB/setup %}
-
-<!-- Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html) -->
-
-<!-- Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com) -->
+<!-- {% include JB/setup %} -->
 
 ### I want to learn more. 
 I wanna post little experiments and things I figure out here. 
 
-<img src="assets/themes/twitter/bootstrap/img/fascinating.jpg" />
 
 <section class="right">
   <h3>Recent posts</h3>
