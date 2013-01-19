@@ -31,6 +31,14 @@
     <section class='content'>
       {{ content }}
     </section>
+    <div>
+      {% if page.previous %}
+      <a href='{{ BASE_PATH }}{{ page.previous.url }}'>&larr;Prev</a>
+      {% endif %}
+      {% if page.next %}
+      <a href='{{ BASE_PATH }}{{ page.next.url }}'>Next &rarr;</a>
+      {% endif %}
+    </div>
     <footer>
       <p>
         &copy; {{ site.author.name }} 2013

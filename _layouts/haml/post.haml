@@ -23,6 +23,13 @@
 
     %section.content
       {{ content }}
+    %div
+      {% if page.previous %}
+      %a{:href => "{{ BASE_PATH }}{{ page.previous.url }}"} &larr;Prev
+      {% endif %}
+      {% if page.next %}
+      %a{:href => "{{ BASE_PATH }}{{ page.next.url }}"} Next &rarr;
+      {% endif %}
 
     %footer
       %p 
