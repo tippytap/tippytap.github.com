@@ -1,6 +1,11 @@
 /* Override some defaults */
-html, body {
-  /*background-color: #eee;*/
+body {
+  background-color: #eee;
+}
+.wrapper{
+  width: 60%;
+  margin: 0 auto;
+  height: 500px;
 }
 .navbar {
   margin-bottom: 0;
@@ -24,6 +29,13 @@ html, body {
   border: 0;
 }
 
+#sidebar{
+	float: right;
+
+}
+#footer{
+	clear: both;
+}
 
 /* tag_box ======================================================== */
 

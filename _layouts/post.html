@@ -2,35 +2,37 @@
 <html>
   {% include document-head.html %}
   <body>
-    <section id='sidebar'>
-      <a class='brand' href='/'>
-        {{ site.title }}
-      </a>
-      <nav>
-        <ul>
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
-        </ul>
-      </nav>
-      <h3>
-        Recent Posts
-      </h3>
-      {% for post in site.posts %}
-      <li>
-        <a href='{{ BASE_PATH }}{{ post.url }}'>
-          <span>
-            {{ post.date | date_to_string }}
-            &raquo;
-            {{ post.title }}
-          </span>
+    <div class='wrapper'>
+      <section id='sidebar'>
+        <a class='brand' href='/'>
+          {{ site.title }}
         </a>
-      </li>
-      {% endfor %}
-    </section>
-    <section class='content'>
-      {{ content }}
-    </section>
+        <nav>
+          <ul>
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+          </ul>
+        </nav>
+        <h3>
+          Recent Posts
+        </h3>
+        {% for post in site.posts %}
+        <li>
+          <a href='{{ BASE_PATH }}{{ post.url }}'>
+            <span>
+              {{ post.date | date_to_string }}
+              &raquo;
+              {{ post.title }}
+            </span>
+          </a>
+        </li>
+        {% endfor %}
+      </section>
+      <section class='content'>
+        {{ content }}
+      </section>
+    </div>
     <div>
       {% if page.previous %}
       <a href='{{ BASE_PATH }}{{ page.previous.url }}'>&larr;Prev</a>
