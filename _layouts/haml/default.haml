@@ -2,28 +2,30 @@
 %html
   {% include document-head.html %}
   %body
-    %div.wrapper
-      %section#sidebar
+    %div.grid
+
+      %section.content.col-2-3
+        {{ content }}
+
+      %section#sidebar.col-1-3
         %a.brand{:href => "/"}
           {{ site.title }}
-        %nav
+        %nav.module
           %ul
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
-        %h3 
-          Recent Posts
-        {% for post in site.posts %}
-        %li
-          %a{:href => '{{ BASE_PATH }}{{ post.url }}'}
-            %span
-              {{ post.date | date_to_string }}
-              &raquo; 
-              {{ post.title }}
-        {% endfor %}
-
-      %section.content
-        {{ content }}
+        %nav.module
+          %h3 
+            Recent Posts
+          {% for post in site.posts %}
+          %li
+            %a{:href => '{{ BASE_PATH }}{{ post.url }}'}
+              %span
+                {{ post.date | date_to_string }}
+                &raquo; 
+                {{ post.title }}
+          {% endfor %}
 
     %footer
       %p 

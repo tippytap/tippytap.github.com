@@ -5,8 +5,10 @@ tagline: I like it.
 ---
 <!-- {% include JB/setup %} -->
 
-### I want to learn more. 
-I wanna post little experiments and things I figure out here. 
+<div class="module">
+	<h1>I like to make buttons</h1>
+
+</div>
 
 
 

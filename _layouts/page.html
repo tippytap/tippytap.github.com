@@ -2,8 +2,11 @@
 <html>
   {% include document-head.html %}
   <body>
-    <div class='wrapper'>
-      <section id='sidebar'>
+    <div class='grid'>
+      <section class='content col-2-3'>
+        {{ content }}
+      </section>
+      <section class='col-1-3' id='sidebar'>
         <a class='brand' href='/'>
           {{ site.title }}
         </a>
@@ -28,9 +31,6 @@
           </a>
         </li>
         {% endfor %}
-      </section>
-      <section class='content'>
-        {{ content }}
       </section>
     </div>
     <footer>
